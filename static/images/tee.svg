@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="200" viewBox="0 0 320 200" role="img" aria-label="Agent Tee">
+  <rect width="320" height="200" fill="#f0eee7"/>
+  <circle cx="160" cy="100" r="78" fill="#345995" opacity=".16"/>
+  <path d="M118 62l22-12 22 12 35 13-16 35-20-8v63h-42v-63l-20 8-16-35z" fill="#345995" stroke="#1d1d1f" stroke-width="5" stroke-linejoin="round"/>
+</svg>

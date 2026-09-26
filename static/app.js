@@ -26,6 +26,7 @@ async function loadProducts() {
   const products = await api('/api/products');
   document.getElementById('product-list').innerHTML = products.map(p => `
     <article class="product">
+      <img class="product-image" src="images/${p.id}.svg" alt="${p.name}" width="320" height="200">
       <h3>${p.name}</h3>
       <p class="price">${rupees(p.price)}</p>
       <button data-add="${p.id}">Add to cart</button>

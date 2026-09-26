@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="200" viewBox="0 0 320 200" role="img" aria-label="Forge Mug">
+  <rect width="320" height="200" fill="#f0eee7"/>
+  <circle cx="160" cy="100" r="78" fill="#e4572e" opacity=".16"/>
+  <path d="M105 65h78v70a30 30 0 0 1-30 30h-18a30 30 0 0 1-30-30zm78 18h17a22 22 0 0 1 0 44h-17" fill="#e4572e" stroke="#1d1d1f" stroke-width="5" stroke-linejoin="round"/>
+</svg>

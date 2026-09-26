@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="200" viewBox="0 0 320 200" role="img" aria-label="Sticker Pack">
+  <rect width="320" height="200" fill="#f0eee7"/>
+  <circle cx="160" cy="100" r="78" fill="#f6ae2d" opacity=".16"/>
+  <path d="M109 64h82v82h-82z M137 91h82v82h-82z" fill="#f6ae2d" stroke="#1d1d1f" stroke-width="5" stroke-linejoin="round"/>
+</svg>
