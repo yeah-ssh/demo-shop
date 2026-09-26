@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Demo Shop</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1 class="brand">Demo Shop</h1>
+    <nav class="header-actions">
+      <a href="#products">Products</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#cart">Cart (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="products">
+      <h2>Products</h2>
+      <div id="product-list" class="grid"></div>
+    </section>
+
+    <section id="cart" class="panel">
+      <h2>Your cart</h2>
+      <ul id="cart-items"></ul>
+      <form id="coupon-form">
+        <input id="coupon-input" name="code" placeholder="Coupon code" autocomplete="off">
+        <button id="apply-coupon" type="submit">Apply</button>
+      </form>
+      <p id="coupon-message" role="status"></p>
+      <dl class="totals">
+        <dt>Subtotal</dt><dd id="subtotal">₹0</dd>
+        <dt>Discount</dt><dd id="discount">0%</dd>
+        <dt>Total</dt><dd id="total">₹0</dd>
+      </dl>
+      <button id="checkout" class="checkout-btn">Checkout</button>
+      <p id="checkout-message" role="status"></p>
+    </section>
+
+    <section id="reviews" class="panel">
+      <h2>Reviews</h2>
+      <button id="load-reviews">Load reviews</button>
+      <ul id="review-list"></ul>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
