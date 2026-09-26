@@ -54,6 +54,16 @@ main {
   padding: 16px;
 }
 
+.product-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  background: #f3f4f6;
+}
+
 .product h3 { margin: 0 0 4px; font-size: 16px; }
 .product .price { color: var(--muted); margin: 0 0 12px; }
 
