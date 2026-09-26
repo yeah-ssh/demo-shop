@@ -22,6 +22,16 @@ def test_coupon_applies_discount():
     assert cart.total() == 810
 
 
+def test_coupon_is_not_applied_twice():
+    cart = Cart()
+    cart.add("tee")
+    cart.apply_coupon("SAVE10")
+    cart.apply_coupon("save10")
+    assert cart.discount_percent == 10
+    assert cart.applied_coupons == ["SAVE10"]
+    assert cart.total() == 810
+
+
 def test_unknown_coupon_rejected():
     cart = Cart()
     with pytest.raises(CouponError):
