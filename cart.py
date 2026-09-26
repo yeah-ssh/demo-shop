@@ -42,6 +42,8 @@ class Cart:
         code = code.strip().upper()
         if code not in COUPONS:
             raise CouponError(f"Unknown coupon: {code}")
+        if code in self.applied_coupons:
+            return self.discount_percent
         self.discount_percent += COUPONS[code]
         self.applied_coupons.append(code)
         return self.discount_percent
