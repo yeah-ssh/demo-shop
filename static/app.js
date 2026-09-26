@@ -53,14 +53,14 @@ document.getElementById('checkout').addEventListener('click', () => {
   document.getElementById('checkout-message').textContent = 'Order placed! (demo)';
 });
 
-// Highlight "(verified buyer)" badges without capturing the parentheses.
-const VERIFIED = /(?<=\()verified buyer(?=\))/g;
+// Highlight "(verified buyer)" badges while keeping the parentheses outside the mark.
+const VERIFIED = /(\()verified buyer(\))/g;
 
 document.getElementById('load-reviews').addEventListener('click', async () => {
   const reviews = await api('/api/reviews');
   document.getElementById('review-list').innerHTML = reviews.map(r => `
     <li><strong>${r.author}</strong> ${'★'.repeat(r.rating)}<br>
-      ${r.text.replace(VERIFIED, '<mark>$&</mark>')}</li>`).join('');
+      ${r.text.replace(VERIFIED, '$1<mark>verified buyer</mark>$2')}</li>`).join('');
 });
 
 (async () => {
